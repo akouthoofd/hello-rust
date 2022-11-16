@@ -6,5 +6,5 @@ fn main() {
     let width = message.chars().count();
 
     let mut writer = BufWriter::new(stdout.lock());
-    ferris_says::say(message.as_bytes(), width, &mut writer).unwrap();
+    ferris_says::say(message.as_str(), width, &mut writer).unwrap();
 }
